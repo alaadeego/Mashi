@@ -1,0 +1,39 @@
+PODS:
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - HanekeSwift (0.10.1)
+  - Localize-Swift (1.7.1)
+  - SwiftHEXColors (1.1.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
+  - Localize-Swift
+  - SwiftHEXColors
+
+EXTERNAL SOURCES:
+  HanekeSwift:
+    :branch: feature/swift-3
+    :git: https://github.com/Haneke/HanekeSwift.git
+
+CHECKOUT OPTIONS:
+  HanekeSwift:
+    :commit: 2f6d87f1f725d204d85cb34492e8c399cd5a200f
+    :git: https://github.com/Haneke/HanekeSwift.git
+
+SPEC CHECKSUMS:
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  Localize-Swift: 6cabc1087c0e910e77bfa87c2ed3f65c80c0b2df
+  SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
+
+PODFILE CHECKSUM: 4b47596deb4992b49ac49f706a063f35a1fcb1a2
+
+COCOAPODS: 1.2.1
