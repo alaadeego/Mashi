@@ -30,6 +30,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+
+    func open_side_menu(){
+
+        revealViewController().rightRevealToggle(animated: true)
+
+
+    }
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
