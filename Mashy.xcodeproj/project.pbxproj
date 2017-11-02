@@ -16,6 +16,7 @@
 		047F95801FA29304009110FF /* menuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047F957F1FA29304009110FF /* menuCell.swift */; };
 		04F21F121FA8F3540053BB01 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F21F101FA8F3500053BB01 /* SWRevealViewController.m */; };
 		7D4B173E2E9F721EADC5EDB2 /* Pods_Mashy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E8F1CB1D800FEDFE917DF2 /* Pods_Mashy.framework */; };
+		866FF5811FAB9CDA00BA844B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 866FF5801FAB9CD900BA844B /* Localizable.strings */; };
 		86BE52761FAAA696002B106F /* userCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BE52751FAAA696002B106F /* userCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +32,15 @@
 		04F21F101FA8F3500053BB01 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		04F21F111FA8F3530053BB01 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		217F838A9DAE8215DD606236 /* Pods-Mashy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mashy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mashy/Pods-Mashy.debug.xcconfig"; sourceTree = "<group>"; };
+		866FF57F1FAB9CD900BA844B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		866FF5821FAB9CE700BA844B /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		866FF5831FAB9FC100BA844B /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		866FF5871FABD9BA00BA844B /* JF-Flat-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JF-Flat-medium.ttf"; sourceTree = "<group>"; };
+		866FF5881FABD9BA00BA844B /* JF-Flat-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JF-Flat-light.ttf"; sourceTree = "<group>"; };
+		866FF5891FABD9BB00BA844B /* JF-Flat-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JF-Flat-regular.ttf"; sourceTree = "<group>"; };
+		866FF58C1FABE09F00BA844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		866FF58D1FABE09F00BA844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86BE52751FAAA696002B106F /* userCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
-		86BE527B1FAAA6F7002B106F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		86BE527C1FAAA6F7002B106F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0E8F1CB1D800FEDFE917DF2 /* Pods_Mashy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mashy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8ED001B14108D633745972D /* Pods-Mashy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mashy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mashy/Pods-Mashy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +78,7 @@
 		047F95661FA2882F009110FF /* Mashy */ = {
 			isa = PBXGroup;
 			children = (
+				866FF5841FAB9FCE00BA844B /* Resources */,
 				047F95811FA29308009110FF /* Cells */,
 				047F957E1FA2926C009110FF /* MenuReveal */,
 				047F95671FA2882F009110FF /* AppDelegate.swift */,
@@ -110,6 +118,18 @@
 				F8ED001B14108D633745972D /* Pods-Mashy.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		866FF5841FAB9FCE00BA844B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				866FF5881FABD9BA00BA844B /* JF-Flat-light.ttf */,
+				866FF5871FABD9BA00BA844B /* JF-Flat-medium.ttf */,
+				866FF5891FABD9BB00BA844B /* JF-Flat-regular.ttf */,
+				866FF5831FAB9FC100BA844B /* loading.gif */,
+				866FF5801FAB9CD900BA844B /* Localizable.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FCF3F5FB17AA1DA509471A35 /* Frameworks */ = {
@@ -158,6 +178,14 @@
 						DevelopmentTeam = X3DL6XYK8Q;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -167,6 +195,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ar,
 				Base,
 			);
 			mainGroup = 047F955B1FA2882E009110FF;
@@ -185,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				047F95721FA28830009110FF /* LaunchScreen.storyboard in Resources */,
+				866FF5811FAB9CDA00BA844B /* Localizable.strings in Resources */,
 				047F956F1FA28830009110FF /* Assets.xcassets in Resources */,
 				047F956D1FA28830009110FF /* Main.storyboard in Resources */,
 			);
@@ -220,7 +250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FEDA17CD22862ACF2F9196B9 /* [CP] Embed Pods Frameworks */ = {
@@ -260,7 +290,7 @@
 		047F956B1FA28830009110FF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86BE527B1FAAA6F7002B106F /* Base */,
+				866FF58C1FABE09F00BA844B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -268,9 +298,18 @@
 		047F95701FA28830009110FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86BE527C1FAAA6F7002B106F /* Base */,
+				866FF58D1FABE09F00BA844B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		866FF5801FAB9CD900BA844B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				866FF57F1FAB9CD900BA844B /* en */,
+				866FF5821FAB9CE700BA844B /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -378,7 +417,7 @@
 				DEVELOPMENT_TEAM = X3DL6XYK8Q;
 				INFOPLIST_FILE = Mashy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Market.com.Mashy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mashy.mashy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mashy/Mashy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -395,7 +434,7 @@
 				DEVELOPMENT_TEAM = X3DL6XYK8Q;
 				INFOPLIST_FILE = Mashy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Market.com.Mashy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mashy.mashy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Mashy/Mashy-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

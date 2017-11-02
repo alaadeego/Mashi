@@ -8,15 +8,26 @@
 
 import Foundation
 import UIKit
+import Localize_Swift
+import Haneke
 
 class RightMenuViewController: UIViewController {
     
     @IBOutlet weak var tablemenu: UITableView!
     var Titles_menu:[String]?
-    var Image_menu:[String]?
+    var Image_menu:[UIImage]?
 
     override func viewWillAppear(_ animated: Bool) {
-        Titles_menu = ["test"]
+        Titles_menu = ["userProfile".localized(),
+        "payment".localized(),
+        "history".localized(),
+        "Wallet".localized(),
+        "coupon".localized(),
+        "settings".localized(),
+        "shareApp".localized()]
+
+        Image_menu = [#imageLiteral(resourceName: "photoclient"),#imageLiteral(resourceName: "pay"),#imageLiteral(resourceName: "pervious"),#imageLiteral(resourceName: "wallet"),#imageLiteral(resourceName: "coupon"),#imageLiteral(resourceName: "settingorange"),#imageLiteral(resourceName: "share")]
+
         tablemenu.delegate=self
         tablemenu.dataSource=self
         tablemenu.reloadData()
@@ -50,13 +61,18 @@ extension RightMenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Titles_menu!.count
+        return (Titles_menu!.count+1)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
-            return 45
-
+            if (indexPath.row == 0)
+            {
+                return 150
+            }
+            else
+            {
+                return 55
+            }
     }
 
 
@@ -66,11 +82,52 @@ extension RightMenuViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+        let cell:UITableViewCell?
+
+        if (indexPath.row == 0)
+        {
+
+            let cell:userCell  = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! userCell
+
+
+            let defaults:UserDefaults = (UserDefaults.standard)
+            if let testnilobject  = defaults.object(forKey: "nameuser") {
+                cell.user_title.text = testnilobject as? String
+            }
+            else
+            {
+                cell.user_title.text = "usernamelabel".localized()
+            }
+            if let testnilobject  = defaults.object(forKey: "UserPhoto") {
+                let url : String = testnilobject as! String
+                let urlStr : String = url.addingPercentEscapes(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue))! as String
+                let ImageURL : URL = URL(string: urlStr as String)!
+                cell.user_image.hnk_setImageFromURL(ImageURL)
+            }
+            cell.user_image.layer.cornerRadius=37.5
+            cell.user_image.clipsToBounds=true
+
+
+
+
+
+            return cell
+        }
+
+        else {
+
             let cell:menuCell  = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! menuCell
-        cell.menu_title.text = Titles_menu?[indexPath.row]
-        return cell
-            
-            
+
+            //cell.backgroundColor = UIColor.grayColor()
+            cell.menu_title.text = Titles_menu?[indexPath.row-1]
+            cell.menu_image.image = Image_menu?[indexPath.row-1]
+
+
+            return cell
+
+
+        }
+
 
     }
     

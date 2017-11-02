@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import GoogleMaps
+
+//Google api AIzaSyB6QG55fRoUlKU9rGZsl3KnE5Ra1Eq841c
+// credentials api AIzaSyCXGTZD5adcezZ3XVPeu24Fek3EPL1OEYU
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,14 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
         // Override point for customization after application launch.
 
+          //Amany Edit
+         //google api foe app mashy
+        GMSServices.provideAPIKey("AIzaSyB6QG55fRoUlKU9rGZsl3KnE5Ra1Eq841c")
+          // for google places
+          //Amany Edit
+         // GMSPlacesClient.provideAPIKey("AIzaSyB6QG55fRoUlKU9rGZsl3KnE5Ra1Eq841c")
 
-        //Amany Edit 
+         //Amany Edit
         // change navigation Bar color and title color overall app
 
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+      //  UINavigationBar.appearance().tintColor = UIColor.white
+       // UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
 
         return true
     }
