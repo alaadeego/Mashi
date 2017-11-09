@@ -6,4 +6,12 @@
 "settings" = "الاعدادات";
 "shareApp" = "مشاركة التطبيق";
 "userProfile" = " الملف الشخصي";
+"الايميل غير صحيح" = "email is wrong";
+"كلمه المرور غير متطابقه" = "password dosn't match";
+"جوجل" = "Google";
+"فيسبوك" = "Facebook";
+"تويتر" = "Twitter";
+"ادخل البريد الالكتروني الصحيح" = "enter valid email";
+"ادخل كلمه المرور" = "enter password";
+"لا يوجد انترنت" = "No internet connection";
 

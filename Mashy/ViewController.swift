@@ -16,6 +16,7 @@ class ViewController: UIViewController, GMSMapViewDelegate  {
     @IBOutlet var menubtn: UIButton!
     @IBOutlet var titlelbl: UILabel!
     @IBOutlet var searchview: UIView!
+    
 
     var userlocation:CLLocation = CLLocation()
     var locationManager:CLLocationManager!
@@ -24,6 +25,8 @@ class ViewController: UIViewController, GMSMapViewDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         titlelbl.text = "detectyourDestenation".localized()
 

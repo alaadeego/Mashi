@@ -10,6 +10,14 @@ target 'Mashy' do
     pod 'GoogleMaps'
     pod 'GooglePlaces'
     pod 'Localize-Swift'
+    pod 'Toast-Swift', '~> 2.0.0'
+    pod 'Alamofire', '~> 4.5'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
+    pod 'Google/SignIn'  
+
+
+
+
 
 
 
